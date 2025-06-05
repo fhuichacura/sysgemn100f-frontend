@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ⚙️ CONFIGURA TUS DATOS AQUÍ
-GITHUB_USERNAME="felipehuichacura"
+GITHUB_USERNAME="fhuichacura"
 REPO_NAME="sysgemn100f-frontend"
 BRANCH_NAME="development"
 
