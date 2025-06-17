@@ -1,0 +1,16 @@
+flowchart TD
+  A[➕ Crear Cliente] --> B[📝 Crear Contrato]
+  B --> C{¿Contrato incluye servicio activo?}
+
+  C -- Sí --> D[🔐 Generar Código de Activación]
+  D --> E[👤 Crear Superusuario]
+  E --> F{¿Requiere sincronización externa?}
+
+  F -- Sí --> G[🔄 API Sync → Númina]
+  G --> H[✅ Usuario habilitado en Númina]
+
+  C -- No --> Z[🗃️ Contrato registrado sin activación]
+
+  F -- No --> Y[✅ Activación solo interna]
+
+  B --> X[💰 Precio y tipo de contrato quedan vinculados al cliente]
